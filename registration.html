@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>REGISTRATION FORM</title>
+        <style>
+            body{
+                font-family:'Times New roman', sans-serif;
+                padding: 20px;
+            }
+            h1{
+                text-align: center;
+                color:#773c6f
+            }
+            table{
+                margin:0 auto;
+                border-collapse: collapse;                
+                padding: 20px;
+                background-color: #7192da;
+                border-radius: 20px;
+            }
+
+            td{
+                padding:10px;
+                vertical-align: middle;
+            }
+
+            input[type=text],input[type=password],textarea,select{
+                margin:0 auto;
+                border-radius:10px;
+                padding:8px;
+                width:95%;
+                
+            }
+            input[type=submit]{
+                background-color:#c4c8cf;
+                border-radius:10px;
+                cursor:pointer;
+            }
+
+            label{
+                font-weight: bold;
+                
+            }
+
+            textarea{
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="fullname">Fullname</label></td>
+                    <td><input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" id="email" name="email" placeholder="Enter your email address" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="confirm_password"> Confirm Password</label></td>
+                   <td> <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter your password again"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Others</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="country"> Country</label></td>
+                    <td>
+                        <select id="country" name="country" required>
+                            <option id="">Select your Country</option>
+                            <option id="in">India</option>
+                            <option id="uk">United Kingdom</option>
+                            <option id="dub">Dubai</option>
+                            <option id="indo">Indonesia</option>
+                            <option id="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="interests" >Interests</label></td>
+                    <td>
+                    <label for="music">Music</label>
+                    <label><input type="checkbox" name="interests[]" value="music"> Music</label>
+                    <label><input type="checkbox" name="interests[]" value="sports"> Sports</label>
+                    <label><input type="checkbox" name="interests[]" value="reading"> Reading</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="bio">Bio</label></td>
+                    <td><textarea id="bio" name="bio" rows="4"></textarea></td>
+                </tr>
+
+                
+
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <input type="submit" id="register" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
